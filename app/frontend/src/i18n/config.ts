@@ -5,6 +5,7 @@ import { initReactI18next } from "react-i18next";
 
 import daTranslation from "../locales/da/translation.json";
 import enTranslation from "../locales/en/translation.json";
+import csTranslation from "../locales/cs/translation.json";
 import esTranslation from "../locales/es/translation.json";
 import frTranslation from "../locales/fr/translation.json";
 import jaTranslation from "../locales/ja/translation.json";
@@ -21,6 +22,10 @@ export const supportedLngs: { [key: string]: { name: string; locale: string } } 
     en: {
         name: "English",
         locale: "en-US"
+    },
+    cs: {
+        name: "Čeština",
+        locale: "cs-CZ"
     },
     es: {
         name: "Español",
@@ -62,6 +67,7 @@ i18next
         resources: {
             da: { translation: daTranslation },
             en: { translation: enTranslation },
+            cs: { translation: csTranslation },
             es: { translation: esTranslation },
             fr: { translation: frTranslation },
             ja: { translation: jaTranslation },
